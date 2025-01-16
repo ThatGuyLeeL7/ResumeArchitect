@@ -3,32 +3,44 @@ body {
 }
 
 
-/*Navigation bar*/
+/*Navigation bar styling*/
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-li {
-  float: left;
-}
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 30px;
-  text-indent: 30px;
-}
-li a:hover {
-  background-color: #111;
-}
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #148bcf;
+  }
+  
+  li {
+	float: left;
+  }
+  
+  li a {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px; /* Same text size for all buttons */
+	height: 60px; /* Fixed height for all buttons */
+	line-height: 60px; /* Vertically centers the text */
+	padding: 20px 20px; /* Adjust padding for horizontal spacing */
+  }
+  
+  li a:hover {
+	background-color: #13b5d1;
+  }
+  
+/* Unique styling for "Resume Architect" */
+.nav-title {
+	font-size: 50px; 
+	font-weight: bold; 
+  }
+  
 
 /************************************************/
 
+/* Headers */
 h1 {
 	padding-top: 5px;
 	font-family: 'Californian FB';
@@ -59,27 +71,38 @@ h5 {
 	font-family: "Californian FB";
 	font-size: 15px;
 }
-
-table {
-
-}
-
+/************************************************/
 
 main {
 	background-color: white;
 	padding: 45px;
 	padding-bottom: 40px;
-	border: 3px solid #4CAF50;
+	border: 3px solid #148bcf;
 }
 
-footer {
+/* Shared button styling */
+.styled-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+        }
+/* Hover effect for buttons */
+    .styled-button:hover {
+        background-color: #0056b3;
+    }
 
-}
+/* Hide the actual file input */
+    #fileUpload {
+        display: none;
+    }
 
-button {
-	font-size: 20px;
-}
-
-
-
+	
+/* Slideshow **********************************/
 
