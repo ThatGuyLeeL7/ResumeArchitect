@@ -18,17 +18,46 @@
           </ul>
     </header>
 
-
-    <hr>
-
     <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
     <main>
-        <button class="styled-button" onclick="document.location.href ='placeholder'">Create Resume</button> 
-
-        <!-- "Import Resume" button -->
-        <label for="fileUpload" class="styled-button">Upload Resume</label> <!--Needs to be modified so that it'll take user to another page when they upload resume-->
-        <input type="file" id="fileUpload" onchange="handleFileUpload(event)"> 
+        <div class="main-container">
+            <!-- Slideshow Container -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="img/sampleResume1.png" style="width:100%">
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="img/sampleResume2.jpg" style="width:100%">
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="img/sampleResume3.png" style="width:100%">
+                </div>
+    
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+    
+            <!-- Buttons Section -->
+            <div class="buttons-container">
+                <button class="styled-button" onclick="document.location.href ='placeholder'">Create Resume</button>
+                <br>
+                <br>
+                <label for="fileUpload" class="styled-button">Upload Resume</label>
+                <input type="file" id="fileUpload" onchange="handleFileUpload(event)">
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
     </main>
 
     <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
@@ -37,4 +66,5 @@
 
     </footer>
 </body>
+<script src="script.js"></script>
 </html>
