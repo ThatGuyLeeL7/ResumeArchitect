@@ -21,7 +21,7 @@ ul {
 	color: white;
 	text-align: center;
 	text-decoration: none;
-	font-size: 20px; /* Same text size for all buttons */
+ font-size: clamp(10px, 1vw, 20px); /* Font size scales between 16px and 24px */
 	height: 60px; /* Fixed height for all buttons */
 	line-height: 60px; /* Vertically centers the text */
 	padding: 20px 20px; /* Adjust padding for horizontal spacing */
@@ -33,9 +33,9 @@ ul {
   
 /* Unique styling for "Resume Architect" */
 .nav-title {
-	font-size: 50px; 
-	font-weight: bold; 
-  }
+  font-size: clamp(30px, 1vw, 50px); /* Font size scales between 30px and 50px */
+  font-weight: bold;
+}
   
 
 /************************************************/
