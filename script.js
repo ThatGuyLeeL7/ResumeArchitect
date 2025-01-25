@@ -49,3 +49,9 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 ///////////////////////////////////////////
+
+function toggleMenu() {
+  const menu = document.querySelector(".nav-menu");
+  menu.classList.toggle("open");
+}
+

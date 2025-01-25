@@ -8,14 +8,19 @@
 
     <!---Navigation Bar--->
     <header>
-        <ul>
+        <ul class="nav-bar">
             <li><a href="index.html" class="nav-title">Resume Architect</a></li>
-            <li><a href="examplePage.html">Resume Examples</a></li>
-            <li><a href="templatePage.html">Resume Templates</a></li>
-            <li><a href="editorPage.html">Resume Editor</a></li>
-            <li><a href="editorPage.html">Cover Letter</a></li>
+            <div class="nav-menu">
+                <li><a href="examplePage.html">Resume Examples</a></li>
+                <li><a href="templatePage.html">Resume Templates</a></li>
+                <li><a href="editorPage.html">Resume Editor</a></li>
+                <li><a href="editorPage.html">Cover Letter</a></li>
+            </div>
             <li style="float:right"><a href="signPage.html">Sign In</a></li>
-          </ul>
+            <li class="hamburger">
+                <button onclick="toggleMenu()">☰</button>
+            </li>
+        </ul>
     </header>
 
     <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
